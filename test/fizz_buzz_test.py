@@ -13,9 +13,14 @@ class Test3の倍数を入力した時にFizzを返す(FizzBuzzTest):
         self.assertEqual("Fizz", self.fizzbuzz.get_fizzbuzz(3))
 
 class Test5の倍数を入力した時にBuzzを返す(FizzBuzzTest):
-    def test_5を入力した時にFizzで返す(self):
+    def test_5を入力した時にBuzzで返す(self):
         # 実行 & 検証
         self.assertEqual("Buzz", self.fizzbuzz.get_fizzbuzz(5))
+
+class Test15の倍数を入力した時にFizzBuzzを返す(FizzBuzzTest):
+    def test_15を入力した時にFizzBuzzで返す(self):
+        # 実行 & 検証
+        self.assertEqual("FizzBuzz", self.fizzbuzz.get_fizzbuzz(15))
 
 class Testその他の値を入れた時にそのまま文字列を返す(FizzBuzzTest):
     def test_1を入力した時に文字列で返す(self):
