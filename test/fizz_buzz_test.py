@@ -3,20 +3,21 @@ from main.fizz_buzz import FizzBuzz
 
 
 class FizzBuzzTest(TestCase):
-    def test_1を入力した時に文字列で返す(self):
+    def setUp(self):
         # 準備
-        fizzbuzz = FizzBuzz()
-        # 実行 & 検証
-        self.assertEqual("1", fizzbuzz.get_fizzbuzz(1))
+        self.fizzbuzz = FizzBuzz()
 
+class Test3の倍数を入力した時にFizzを返す(FizzBuzzTest):
     def test_3を入力した時にFizzで返す(self):
-        # 準備
-        fizzbuzz = FizzBuzz()
         # 実行 & 検証
-        self.assertEqual("Fizz", fizzbuzz.get_fizzbuzz(3))
+        self.assertEqual("Fizz", self.fizzbuzz.get_fizzbuzz(3))
 
+class Test5の倍数を入力した時にBuzzを返す(FizzBuzzTest):
     def test_5を入力した時にFizzで返す(self):
-        # 準備
-        fizzbuzz = FizzBuzz()
         # 実行 & 検証
-        self.assertEqual("Buzz", fizzbuzz.get_fizzbuzz(5))
+        self.assertEqual("Buzz", self.fizzbuzz.get_fizzbuzz(5))
+
+class Testその他の値を入れた時にそのまま文字列を返す(FizzBuzzTest):
+    def test_1を入力した時に文字列で返す(self):
+        # 実行 & 検証
+        self.assertEqual("1", self.fizzbuzz.get_fizzbuzz(1))

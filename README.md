@@ -23,6 +23,7 @@
   - [x] 失敗するテストを作成
   - [x] テストが通るように仮実装する
   - [x] リファクタリングして本実装する
+- [x] refactor duplication and structure
 - [] 3の倍数かつ5の倍数には「FizzBuzz」と出力する
 
 実装時に考えなくて良い
