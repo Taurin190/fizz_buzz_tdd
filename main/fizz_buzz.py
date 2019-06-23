@@ -1,3 +1,3 @@
 class FizzBuzz:
     def get_fizzbuzz(self, num):
-        return "1"
+        return str(num)
