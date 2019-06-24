@@ -45,3 +45,17 @@ class Testその他の値を入れた時にそのまま文字列を返す(FizzBu
     def test_98を入力した時に文字列で返す(self):
         # 実行 & 検証
         self.assertEqual("98", self.fizzbuzz.get_fizzbuzz(98))
+
+
+class Test許容値以外の値は空文字を返す(FizzBuzzTest):
+    def test_0を入力した時に空文字を返す(self):
+        self.assertEqual("", self.fizzbuzz.get_fizzbuzz(0))
+
+    def test_マイナス1を入力した時に空文字を返す(self):
+        self.assertEqual("", self.fizzbuzz.get_fizzbuzz(-0))
+
+    def test_マイナス101を入力した時に空文字を返す(self):
+        self.assertEqual("", self.fizzbuzz.get_fizzbuzz(101))
+
+    def test_Aを入力した時に空文字を返す(self):
+        self.assertEqual("", self.fizzbuzz.get_fizzbuzz(A))
