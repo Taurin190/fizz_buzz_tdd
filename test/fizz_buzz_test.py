@@ -58,4 +58,4 @@ class Test許容値以外の値は空文字を返す(FizzBuzzTest):
         self.assertEqual("", self.fizzbuzz.get_fizzbuzz(101))
 
     def test_Aを入力した時に空文字を返す(self):
-        self.assertEqual("", self.fizzbuzz.get_fizzbuzz(A))
+        self.assertEqual("", self.fizzbuzz.get_fizzbuzz("A"))
