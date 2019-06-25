@@ -11,3 +11,10 @@ class FizzBuzz:
         elif num % 3 == 0:
             return "Fizz"
         return str(num)
+
+
+if __name__ == '__main__':
+    fizzbuzz = FizzBuzz()
+    for i in range(1, 100, 1):
+        print(fizzbuzz.get_fizzbuzz(i))
+
